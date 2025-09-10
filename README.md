@@ -34,30 +34,6 @@ UI | HTML, CSS, tiny vanilla JS (no frameworks)
    - Puts `city`, `tempC` on the request and **forwards** to `result.jsp`.
 4. **`result.jsp`** renders a centered **result card** and a **Back** button.
 
-
----
-
-## 🔧 Prerequisites
-- **JDK 17+** (JDK 21 OK)
-- **Maven 3.8+**
-- **Apache Tomcat 10.1.x** (`$CATALINA_HOME` set)
-
----
-
-## ▶️ Build & Run (Local Tomcat)
-```bash
-# from project root
-mvn clean package
-
-# deploy
-cp target/weatherapp.war "$CATALINA_HOME/webapps/"
-
-# start Tomcat
-"$CATALINA_HOME/bin/startup.sh"
-
-# open in browser
-http://localhost:8080/weatherapp/
-
 ## 🔭 Future Additions / Scope
 
 ### 1) UX & Features
@@ -112,3 +88,25 @@ http://localhost:8080/weatherapp/
 - **v2**: Accounts (MySQL), settings (units/theme), caching, tests.
 - **v3**: CI/CD, Docker, observability, multi-API data, SPA/Spring refactor.
 
+---
+
+## 🔧 Prerequisites
+- **JDK 17+** (JDK 21 OK)
+- **Maven 3.8+**
+- **Apache Tomcat 10.1.x** (`$CATALINA_HOME` set)
+
+---
+
+## ▶️ Build & Run (Local Tomcat)
+```bash
+# from project root
+mvn clean package
+
+# deploy
+cp target/weatherapp.war "$CATALINA_HOME/webapps/"
+
+# start Tomcat
+"$CATALINA_HOME/bin/startup.sh"
+
+# open in browser
+http://localhost:8080/weatherapp/
